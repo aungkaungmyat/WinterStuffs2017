@@ -3,3 +3,12 @@
 3. Default Parameter can be used in function's parameter. If no value has been passed when the function is called or the value is undefined, the default parameter will be used.
 4. Spread Operator(...) can be used to convert from array into indivitual components. Look at the examples for its usages.
 5. Template String can be used for embedded expression. Must use ` instead of single code '. Example: console.log(`1 + 2 is ${1 + 2}`);
+6. Object Literal is an enhancement for define values when creating objects. Instead of defining (eg, name: name) like in ES5, can just call name. Look example in script.
+7. New String methods - repeat, startsWith, endsWith, includes.
+8. Arrow Function can replace the function keyword with =>. Note function is before () and => is after (). If there is only one parameter, () can be removed too.
+9. Sets are arrays to store unique values. Has methods like has, clear, delete, add, and etc. Arrays can be parsed into sets to remove duplicates. Sets can be converted back into arrays by using the spread operator(...).
+10. Generators is used to control the continutiy of function. Add * to the function declaration. use 'yield' to put pause point inside function. Use functionName.next() to move from one yield to another. Useful do deal with asynchronous javascript.
+
+
+JS compiles code right to left. 
+Look this keyword.
