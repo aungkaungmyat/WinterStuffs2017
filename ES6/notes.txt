@@ -2,3 +2,4 @@
 2. Let (lexical scoping) affects only inner functions. Useful in cases when we don't want to change the value of global variable. Look at the for loop example in script.js.
 3. Default Parameter can be used in function's parameter. If no value has been passed when the function is called or the value is undefined, the default parameter will be used.
 4. Spread Operator(...) can be used to convert from array into indivitual components. Look at the examples for its usages.
+5. Template String can be used for embedded expression. Must use ` instead of single code '. Example: console.log(`1 + 2 is ${1 + 2}`);
