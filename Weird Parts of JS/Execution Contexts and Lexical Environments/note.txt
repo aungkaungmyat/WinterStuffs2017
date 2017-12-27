@@ -1,0 +1,28 @@
+Syntax Parser: A program that reads your code and determines what it does
+Lexical Environment: where something sits physically in the code you write
+Execution Context: A wrapper to help manage the code that is running
+
+
+Name_value pair: a name which maps to a unique Name_value
+Object: a collection of name_value pairs
+        eg. Addreess:
+        {
+            Street: 'Main',
+            Number: 100,
+            Apartment:
+            {
+                Floor: 3,
+                Number: 301
+            }
+        }
+
+
+Global Environment and Global Object     
+
+Global Execution context creates global object and 'this' whenever the code runs.
+Global Object is avaiable for every code running inside.
+'this' exists for every new window opens in browers.
+For global level, global object(window) = this.
+
+In JS, 
+Global : "Not Inside a Function"
