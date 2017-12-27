@@ -26,3 +26,12 @@ For global level, global object(window) = this.
 
 In JS, 
 Global : "Not Inside a Function"
+
+
+Creation and 'Hoisting'
+
+In JS, a function can be called before it is created but a variable cannot be used if it is not declared yet (will give undefined). If a variable is never declared an error occurs.
+'Hoisting': setup memory space for variables and functions
+
+Execution Context has two phase
+1. Creation phase where it creates global object, 'this', outer environment, and setup memory space for variables and functions (Hoisting).
