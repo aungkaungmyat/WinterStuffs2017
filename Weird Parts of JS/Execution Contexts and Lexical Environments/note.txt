@@ -34,4 +34,12 @@ In JS, a function can be called before it is created but a variable cannot be us
 'Hoisting': setup memory space for variables and functions
 
 Execution Context has two phase
-1. Creation phase where it creates global object, 'this', outer environment, and setup memory space for variables and functions (Hoisting).
+1. Creation phase where it creates global object, 'this', outer environment, and Hoisting (Variable Setup{intially set up to undefined} and functions setup).
+
+Note:
+All variables in JS are initally initialized as undefined.
+
+
+JavaScript and Undefined
+
+    Undefined is not an error. It is value in javascript. Can be used something like ( if(a === undefined) )
