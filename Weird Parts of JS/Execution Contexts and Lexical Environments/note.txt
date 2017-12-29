@@ -19,27 +19,81 @@ Object: a collection of name_value pairs
 
 Global Environment and Global Object     
 
-Global Execution context creates global object and 'this' whenever the code runs.
-Global Object is avaiable for every code running inside.
-'this' exists for every new window opens in browers.
-For global level, global object(window) = this.
+    -Global Execution context creates global object and 'this' whenever the code runs.
+    -Global Object is avaiable for every code running inside.
+    -'this' exists for every new window opens in browers.
+    -For global level, global object(window) = this.
 
-In JS, 
-Global : "Not Inside a Function"
+    In JS, 
+    Global : "Not Inside a Function"
 
 
 Creation and 'Hoisting'
 
-In JS, a function can be called before it is created but a variable cannot be used if it is not declared yet (will give undefined). If a variable is never declared an error occurs.
-'Hoisting': setup memory space for variables and functions
+    -In JS, a function can be called before it is created but a variable cannot be used if it is not declared yet (will give undefined). If a variable is never declared an error occurs.
+    -'Hoisting': setup memory space for variables and functions
 
-Execution Context has two phase
-1. Creation phase where it creates global object, 'this', outer environment, and Hoisting (Variable Setup{intially set up to undefined} and functions setup).
-
-Note:
-All variables in JS are initally initialized as undefined.
+    -Execution Context has two phase
+        1. Creation phase where it creates global object, 'this', outer environment, and Hoisting (Variable Setup{intially set up to undefined} and functions setup).
+        2. Execution phase (will cover later)
+    Note:
+    All variables in JS are initally initialized as undefined.
 
 
 JavaScript and Undefined
 
-    Undefined is not an error. It is value in javascript. Can be used something like ( if(a === undefined) )
+    -Undefined is not an error. It is value in javascript. Can be used something like ( if(a === undefined) )
+    -Never set a varaible to undefined!!! It will be helpful to debug.
+
+
+Execution Phase
+
+    -Runs your code line by line
+
+
+Single Threaded, Synchronous Execution
+
+    -Single Threaded: one command is executed at a time
+    -Synchronous: one at a time (and in order)
+
+
+Function Invocation and the Execution Stack 
+
+    -Invocation: running a function (or calling it). In JS, we use it by using parenthesis().
+    eg. function b(){
+            var e;
+        }
+        function a(){
+            b();
+            var c;
+        }
+        a();
+        var d;
+
+    -Every function creates execution context.
+    -The Execution Stack for above example will be...
+
+        __________________________
+        |           b()          |
+        |________________________|
+        __________________________
+        |           a()          |
+        |________________________|
+        __________________________
+        |Global Execution Context|
+        |________________________|
+     
+        Lexical order does not matter in this case. var e is assigned first, then c, and d.
+
+
+Functions, Contexts, and Variable Environments
+
+    -Variable Environment: where the variables live.
+    
+    -Check index.html in variable environments to see how execution content effects the variables. Notice the value of myVar in global execution content does not change.
+
+
+Scope Chain
+
+    -Every Execution Context has a reference to its outer environment(outer environment is determined by lexical order). 
+    -If a variable does not exist in current execution context, the value will be looked inside outer environment. Look inside Scope Chain example to check the value of myVar.
