@@ -97,3 +97,18 @@ Scope Chain
 
     -Every Execution Context has a reference to its outer environment(outer environment is determined by lexical order). 
     -If a variable does not exist in current execution context, the value will be looked inside outer environment. Look inside Scope Chain example to check the value of myVar.
+
+Scope, ES6, Let
+
+    -Scope: where a variable is available in your code
+    -let: allows JS for block scoping. Unlike 'var', 'let' will give error if used before declared. Useful for 'for' loops.
+
+    Note: Blocks are generally inside {}(like if and loops).
+
+Asynchronous Callbacks
+
+    -Asynchronous: more than one at a time.
+
+    -In JS Engine, there is an event queue. The actions (like click, HTTP Request) are poped and put into execution stack once at a time.
+    -Brower put events into event queue asynchronouos. JS engine handle one by one.
+    -Look Asynchronous Callbacks example and realize that click action output came out only after other exections. It is because of event queue.    
