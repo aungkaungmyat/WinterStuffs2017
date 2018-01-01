@@ -63,4 +63,17 @@ Existence and Booleans
     -Whatever value put inside if() in converted into boolean.
     -Boolean(undefined), Boolean(null), Boolean(""), Boolean(0) all gives false. 
     -The rest of the Boolean convertion gives true. Therefore, in order to check if a variable has value, do 'if(a || a===0)'.
-    -We can use coercion to check if the variable is assigned a value.
+    -We can use coercion to check if the variable is assigned a value or the existence of variable.
+
+
+Default Values
+
+    -In JS, undefined || 'hello' -> returns 'hello'. Because Boolean(undefined) is false and Boolean('hello') is true. undefined has the same logic with null and "".
+    -Check default values examples to see how to implement with the default value feature in ES6.
+
+    Side Note: Angular is framework and JQuery is library.
+
+    -To prevent a variable got overwritten in library and frameworks, use something like 'window.libraryName = window.libraryName || "Lib 2".
+
+
+
