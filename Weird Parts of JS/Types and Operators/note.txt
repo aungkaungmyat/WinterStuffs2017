@@ -1,0 +1,34 @@
+Types and JS
+
+    -Dynamic Typing: You don't tell the engine what type of data a variable holds, it figuares it out while your code is running.
+    -In JS, an integar value can be assigned to a variable intially set as boolean(dynamic type).
+
+Primitive Types
+
+    -Primitive Type: A type of data that represents a single value. That is not a object.
+        1.Undefined - represents lack of existence. Shouldn't set a variable to undefined.
+        2.NULL - represents lack of existence. Can set a variable to this.
+        3.Boolean - true or false.
+        4.Number - Floating point number. The only 'number' type in JS.
+        5.String - a sequence of characters. Both ' and " can be used.
+        6.Symbol - Used in ES6.
+
+Operators
+
+    -Operator: a special function that is syntactically (written) differently.
+          
+
+Operator Precedence and Associativity
+
+    -Opertor Precedence: which operator function gets called first. Functions are called in order of precedence. (HIGHER called first).
+    -Associativity: what order operator functions get called in: left-to-right or right-to-left
+
+    -Check opertor precedence pdf for the order. HIGHER ones called first.
+        Eg. In, 3 + 4 * 5 -> * called first, then + later, then =.
+        Eg. var a = 2, b = 3, c= 4;
+            a = b = c;
+            All the value in the end will be 4. Because, assignment (=) is right-to-left associativity.
+
+    -JS engine check operator precedence first, if they are in the same order, it checks associativity (left to right or right to left).
+
+            
