@@ -8,4 +8,10 @@ Objects and the Dot
     -To access an object 'person' with property 'firstname'. 
         1. person["firstname"]
         2. person.firstname
-    -Check Objects and the Dot example to see how to deal with objects.
+    -Check Objects and the Dot example to see how to deal with objects. Dot operator is preferred over "[]" operator.
+
+
+ Objects and Object Literals (the prefered way of creating objects)
+
+    -To create object, (var person = {};) can also be used.
+    -Check Objects and Object Literals example to see different ways of creating objects.
