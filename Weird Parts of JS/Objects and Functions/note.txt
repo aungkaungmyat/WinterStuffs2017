@@ -1,0 +1,11 @@
+Objects and the Dot
+
+    -Object: a collection of values that are given name.
+    -Object can have
+        1.Primitive "property"
+        2.Object "property"
+        3.Function "property"
+    -To access an object 'person' with property 'firstname'. 
+        1. person["firstname"]
+        2. person.firstname
+    -Check Objects and the Dot example to see how to deal with objects.
