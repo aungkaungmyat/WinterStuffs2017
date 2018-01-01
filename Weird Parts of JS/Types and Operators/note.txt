@@ -31,4 +31,36 @@ Operator Precedence and Associativity
 
     -JS engine check operator precedence first, if they are in the same order, it checks associativity (left to right or right to left).
 
-            
+Coercion
+
+    -Coercion: converting a value from one type to another.
+        int + int -> int
+        string + string -> string (concatenate)
+        int + string -> string
+            Eg. var a = 1 + '2'; -> will give string '12'.
+
+    Note: number + string in JS in 'string'.   
+
+
+Comparison Operators
+
+    Note: In JS, Number(false) = 0 and Number(true) = 1.
+          boolean < Number -> in this case, boolean is turned into number and got compared.
+          Number(undefined) = NaN. Number(null) = 0.
+
+    Exceptions: false == 0 -> true. null == 0 -> false. null < 1 -> true. 
+                "" == 0 -> true. "" == false -> true.
+    -To avoid above cases, use strict equality (===). In strict equality, there is no coercion.
+
+    -In JS, console.log(3 < 2 < 1) gives true because (3 < 2) = false and corecion turns false into 0.
+
+    -Use '===' instead of '==' most of the time. Make sure all the data are in the correct type.
+
+Existence and Booleans
+
+    Note: Like Number(), there is also Boolean(). But do not use those for normal purposes.
+
+    -Whatever value put inside if() in converted into boolean.
+    -Boolean(undefined), Boolean(null), Boolean(""), Boolean(0) all gives false. 
+    -The rest of the Boolean convertion gives true. Therefore, in order to check if a variable has value, do 'if(a || a===0)'.
+    -We can use coercion to check if the variable is assigned a value.
