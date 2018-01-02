@@ -35,3 +35,59 @@ JSON and Object Literals
         In Object Literals, the property does not have to be put inside quote. JSON is a subset of Object Literals. 
     -To convert Object to JSON, use 'JSON.stringify(object)'    
     -To convert JSON to Object, use 'JSON.parse(json)'
+
+Functions are Objects
+
+    -First Class Functions: everything you can do with other types you can do with functions.
+    -Function is a special type of object. The five properties are primitive, object and function. Name is an optional. And code(invocable).
+        Eg. function greet(){
+                console.log('hi');
+            }
+
+            In this case, name is 'greet', and code is "console.log('hi)".
+
+
+
+Function Statements and Function Expressions 
+
+    -Expression: a unit of code that results in a value.
+        Eg. "1+2;" is an expression. In "var a; a = 3", "a = 3" is also an expression. It results in a value.
+
+    -Statement: just does work
+        Eg. if statement ->   if( a === 3){
+
+                              }. 
+            It just does work. No value assigned.      
+
+
+    -Two ways for creating functions.
+        Eg.function greet(){       //greet is name 
+             console.log('hi');  //this is code
+           }
+
+
+            var anonymousGreet = function(){    //there is no name. anonymousGreet is memory reference
+                console.log('hi');              //this is code.
+            }    
+
+    -Check Function Statements and Function Expression example to see how to pass function as paremeter to another function. This is the concept of first class function.                     
+
+
+By Value vs By reference
+
+    -by value: copying the value into two seperate spots in memory
+        eg. a = primitive; //a -> primitive value
+            b = a;         //b -> copy of primitive value
+
+    -by reference: all objects interact by reference.
+        eg. a = object;
+            b = a;          //both a and b points to the same object
+
+    -Mutate: To change something. "Immutable" means it can't be changed.
+
+    -by value (primitives)
+    -by reference (all objects (including functions))
+    -by reference (even as parameters)
+    -equals operator sets up new memory space (new address)
+        Look at By Value and By Reference example to see how they work.
+
