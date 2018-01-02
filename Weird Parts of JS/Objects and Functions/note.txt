@@ -15,3 +15,23 @@ Objects and the Dot
 
     -To create object, (var person = {};) can also be used.
     -Check Objects and Object Literals example to see different ways of creating objects.
+
+
+Faking Namespaces
+
+    -Namespae: a container for variables and functions.
+        Eg. 'greet' exists in both 'english' and 'spanish' object. They can be distinguished by 'english.greet' and 'spanish.greet'.
+    -To implement Namespace feature in JS, use Objects. Check Faking namespace for example.
+
+
+JSON and Object Literals
+
+    -JSON: JavaScript Object Notation    
+    -In JSON, the property has to be put into quote("") in  JSON.
+        Eg. {
+                "firstname": "Mary",
+                "isAProgrammer": true 
+            }
+        In Object Literals, the property does not have to be put inside quote. JSON is a subset of Object Literals. 
+    -To convert Object to JSON, use 'JSON.stringify(object)'    
+    -To convert JSON to Object, use 'JSON.parse(json)'
