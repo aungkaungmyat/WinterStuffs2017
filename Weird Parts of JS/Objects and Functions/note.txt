@@ -91,3 +91,13 @@ By Value vs By reference
     -equals operator sets up new memory space (new address)
         Look at By Value and By Reference example to see how they work.
 
+
+Objects, Functions, and 'this'
+
+    -Inside object literals, primitives are called properties and functions are called methods.
+    
+    -Whenever a function is invoked, new execution context is created. 
+    -If a method is on a object and that method is invoked, 'this' points to that object. Look at "Objects, Functions, and 'this'" example.
+
+    -When 'this' is called inside, another function inside a function which is inside the object, that 'this' will invoke global object instead. 
+    -In order to prevent above bug, assign 'this' to a variable and use that variable instead. For example, "var self = this;". Look example.
