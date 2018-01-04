@@ -101,3 +101,8 @@ Objects, Functions, and 'this'
 
     -When 'this' is called inside, another function inside a function which is inside the object, that 'this' will invoke global object instead. 
     -In order to prevent above bug, assign 'this' to a variable and use that variable instead. For example, "var self = this;". Look example.
+
+
+Arrays - Collections of Anything
+
+    -JS array can store any different colletion of items.
