@@ -121,4 +121,19 @@ Arrays - Collections of Anything
 
     -Spread('...') could be preferred way for replacing arguments.
 
-    
+
+Overloading
+
+    -JS does not support default overloading like other programming languages. But look at 'oveloading framework' to learn how to implement it.
+
+
+Syntax Parsers
+
+    -Syntax Parser in JS goes by character by character when it translates the code.
+
+
+Dangerous - Automatic Semicolon Insertion    
+
+    -Always put your own semicolon.
+    -Syntax parsers knows the line ends when it reads 'carriage(enter)'. Then it automatically adds a semicolon by itself if missing.
+        Look at Automatic Semicolon Insertion for how automatic semicolon insertion can mess up the code.
