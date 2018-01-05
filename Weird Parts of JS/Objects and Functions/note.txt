@@ -106,3 +106,19 @@ Objects, Functions, and 'this'
 Arrays - Collections of Anything
 
     -JS array can store any different colletion of items.
+
+
+'Arguments' and spread    
+
+    -Arguments: The parameters you pass to a function
+    -arguments contains all the values passed into the called functions
+    
+    -When function is evoked without passing the arguments, the value 'undefined' will be assigned to the arguments.
+        -if only a value is passed out of three parameters, the last two will be undefined.
+    -The passed-in values can be found in 'arguments'. Check 'Arguements and spread' for using arguments.
+
+    -Argument is an 'array-like'. Like an array but cannot do everything that array can do.
+
+    -Spread('...') could be preferred way for replacing arguments.
+
+    
