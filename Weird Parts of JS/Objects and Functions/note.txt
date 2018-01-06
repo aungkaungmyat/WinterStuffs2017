@@ -137,3 +137,8 @@ Dangerous - Automatic Semicolon Insertion
     -Always put your own semicolon.
     -Syntax parsers knows the line ends when it reads 'carriage(enter)'. Then it automatically adds a semicolon by itself if missing.
         Look at Automatic Semicolon Insertion for how automatic semicolon insertion can mess up the code.
+
+Whitespace
+
+    -Whitespace: invisible characters that create literal 'space' in your written code.    
+    -Look at 'whitespace' example to see how JS is literal with whitespaces.    
