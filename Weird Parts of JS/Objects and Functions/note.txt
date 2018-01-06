@@ -151,7 +151,11 @@ Immediately Invoked Functions Expressions (IIFEs)
                 return 'Hello ' + name;
             }();
         When using something like console.log(greeting), 'greeting' no longer needs invoking '()' since it is already invoked.
-
+        Another Common way
+        Eg. (function(name) {
+                var greeting = 'Inside IIFE: Hello';
+                console.log(greeting + ' ' + name);
+            }(firtname));   //IIFE
 
     -Side Note - writing things like "3;", "'I am string';" are valid in JS. They are just expressions.
         In order to use functions like an expression, it has to be expressed like   
@@ -159,4 +163,11 @@ Immediately Invoked Functions Expressions (IIFEs)
                 return 'Hello ' + name;
             });     
 
+
     -Check Immediately Invoked Functions Expressions (IIFE) example to see different way to using functions and IIFEs.          
+
+
+IIFEs and Safe Code
+
+    -The variables inside IIFE are specific to that function scope because of Execution Context.
+        If you want to mess with the global object, pass the 'window' as argument to the function. Check IIFE and Safe Code for example.
