@@ -171,3 +171,9 @@ IIFEs and Safe Code
 
     -The variables inside IIFE are specific to that function scope because of Execution Context.
         If you want to mess with the global object, pass the 'window' as argument to the function. Check IIFE and Safe Code for example.
+
+
+Understanding Closures
+
+    -Closures is a feature of a JS when a function is running, it will has access to the variable that is supposed to be necessay.
+        For example, look at 'understanding closure' example to see that 'whattosay' variable still exists for 'sayHi' method even though its execution method is already gone. 
