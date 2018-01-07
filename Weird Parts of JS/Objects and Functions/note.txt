@@ -219,3 +219,11 @@ call(), apply(), and bind()
     -apply() is the same as call() but apply() requires the arguments to pass in as array.
 
     -these methods are useful for function borrowing and function currying. Look at examples.
+
+
+Functional Programming
+
+    -JS first-class function is also available in  functional programming.
+
+    -Passing functions as an parameter to make codes cleaner and nicer.
+        Look at Functional Programming example to learn how it looks like.
