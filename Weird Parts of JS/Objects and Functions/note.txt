@@ -189,3 +189,33 @@ Function Factories(not very important, just JS feature explanation)
     -JS creates closures for each function and the values are stored separately when they are called with different variables. Look at Function Factories example.
 
 
+Closures and Callbacks
+
+    -Callback function: A function you give to another function, to be run when the other function is finished.
+        Look at closures and callbacks example to see how to implement simple callback function.
+
+
+call(), apply(), and bind()
+
+    -Side Note: In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. 
+        What distinguishes them from other objects is that functions can be called. In brief, they are Function objects.
+
+
+    -call, apply, and binnd are methods available for function objects in addion to code and name properties. 
+
+    -bind() method creates a bound function for the function with the object being passed so that the function can use initialed value from the object (for example 'this.sth').
+     It effects the execution stack order that JS engine look up for 'this'.   
+        Eg. var logPersonName = logName.bind(person). Look at call(), apply(), and bind() example for more.
+    -Giving values other than object to bind sets permenent value to the parameters. Second argument in bind will be the first parameter for the function being invoked. Look at example function currying.
+
+    -Function Currying: creating a copy of a functiton but with some preset parameters. Useful in mathematical situations. 
+
+    -call() is similar to invoking '()' but can also describe the execution context (for 'this) like bind.
+
+    -Difference between call() and bind()
+        bind creates copy of the function
+        call executes it
+
+    -apply() is the same as call() but apply() requires the arguments to pass in as array.
+
+    -these methods are useful for function borrowing and function currying. Look at examples.
