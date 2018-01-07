@@ -177,3 +177,15 @@ Understanding Closures
 
     -Closures is a feature of a JS when a function is running, it will has access to the variable that is supposed to be necessay.
         For example, look at 'understanding closure' example to see that 'whattosay' variable still exists for 'sayHi' method even though its execution method is already gone. 
+
+    -Look at buildFunctions method in example. When the functions are invoked, all the value of 'i' are '3' because the value of 'i' being referenced from the pushed function is '3'.
+        And since the value of 'i' still remains as closure when the functions are invoked, the referenced value will be 3.    
+
+    -To fix the repition issue above, use 'let' instead of 'var'. 'let' creates new space in memory that exists for each of them. Or use IIFE as in example.    
+
+
+Function Factories(not very important, just JS feature explanation)
+
+    -JS creates closures for each function and the values are stored separately when they are called with different variables. Look at Function Factories example.
+
+
