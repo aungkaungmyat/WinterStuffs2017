@@ -1,0 +1,19 @@
+Classical vs Prototypal Inheritance
+
+    -Inheritance: one object gets access to the properties and methods of another object.
+    
+    -Classical Inheritance: a way of sharing properties and methods in like Java and C.
+
+    -Prototypal Inheritance: simple way (flexible, extensible, easy to understand)
+
+
+Understanding the prototype
+
+    -All objects in JS including function points to another object called proto or prototype. That prototype stands as an object by itself.
+     Each prototype also contains its own properties and can also have its prototype.
+     If an object cannot find a property, it continues to find in its prototypes.
+     The sequence of object pointing to prototype which in turns points to another prototype is called prototype chain.
+
+    -Different objects can share the same prototype.    
+
+    -You can set the proto type to another object by using (.__proto__). But don't use it ever for performance reason.
