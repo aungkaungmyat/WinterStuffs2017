@@ -17,3 +17,10 @@ Understanding the prototype
     -Different objects can share the same prototype.    
 
     -You can set the proto type to another object by using (.__proto__). But don't use it ever for performance reason.
+
+Everything is an object
+
+    -Everything in JS is object except the base.
+        Object {}, function  Empty(){}, [] are the prototype of empty object, function, and arrays.
+
+    -The prototype of any prototype is object.    
