@@ -24,3 +24,5 @@ Everything is an object
         Object {}, function  Empty(){}, [] are the prototype of empty object, function, and arrays.
 
     -The prototype of any prototype is object.    
+
+Temp    
